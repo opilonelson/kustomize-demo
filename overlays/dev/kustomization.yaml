@@ -1,0 +1,16 @@
+resources:
+  - ../../base
+
+namePrefix: dev-
+labels:
+- pairs:
+    env: dev
+
+images:
+  - name: nginx
+    newTag: "1.23"
+
+replicas:
+  - name: demo-app
+    count: 2
+

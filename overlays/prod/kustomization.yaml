@@ -1,0 +1,16 @@
+resources:
+  - ../../base
+
+namePrefix: prod-
+labels:
+- pairs:
+    env: prod
+
+images:
+  - name: nginx
+    newTag: "1.25"
+
+replicas:
+  - name: demo-app
+    count: 3
+
